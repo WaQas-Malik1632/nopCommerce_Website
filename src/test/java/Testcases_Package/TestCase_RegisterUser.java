@@ -17,7 +17,7 @@ public class TestCase_RegisterUser extends BaseClass_Browser
   {
 	  RegisterUser_Page Register=new RegisterUser_Page(driver);
 	  Register.Precondition();
-	  Register.SignUp_Form("Test", "user", "Test3@gmail.com", "TestComp", "Test@123", "Test@123");
+	  Register.SignUp_Form("Test", "user", "Test123@gmail.com", "TestComp", "Test@123", "Test@123");
 	  
 	  String actual_url=driver.getCurrentUrl();
 	  String expected_url="https://demo.nopcommerce.com/registerresu";

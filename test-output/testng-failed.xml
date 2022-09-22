@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Testcases_Package.ValidateLoginPage">
+      <class name="Testcases_Package.TestCases_OrderAndcart_Page">
         <methods>
-          <include name="Testcase_VerifyLoginwith_bothWrongEmailandPassword_SignupNewForAccount"/>
           <include name="beforeMethod"/>
+          <include name="VerifyplaceOrderofComputer"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- Testcases_Package.ValidateLoginPage -->
+      </class> <!-- Testcases_Package.TestCases_OrderAndcart_Page -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

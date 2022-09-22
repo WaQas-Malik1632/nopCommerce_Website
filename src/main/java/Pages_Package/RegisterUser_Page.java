@@ -38,45 +38,31 @@ public class RegisterUser_Page
 		//RadiobuttonFemale.click();	
 		
 		WebElement Firstname=driver.findElement(txt_firstname);
-		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		Firstname.sendKeys(Fname);
 		
 		WebElement Lastname=driver.findElement(txt_lastname);
-		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		Lastname.sendKeys(Lname);
 		
 		WebElement email=driver.findElement(txt_Email);
-		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		email.sendKeys(Email);
 		
 		WebElement comp=driver.findElement(txt_companyName);
-		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		comp.sendKeys(CompanyName);
 		
 		JavascriptExecutor js=(JavascriptExecutor)driver;
 		js.executeScript("window", 0,700);
 		
 		WebElement pass=driver.findElement(txt_password);
-		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		pass.sendKeys(Pass);
 		
 		WebElement Confpass=driver.findElement(txt_confirm_Password);
-		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		Confpass.sendKeys(ConfPass);
 		
 		WebElement btnReg=driver.findElement(btn_Register);
-		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		btnReg.click();
-		btnReg.getText();
-		
-		if(driver.getPageSource().contains("Email is alreadyu"))
-		{
-			System.out.println("This user is already registered");
-			
-		}
-			
-			
-		
+		//btnReg.getText();
+	
+
 		//After signup click on continue button to go to home page
 		WebElement click_ContinueReg=driver.findElement(By.xpath("/html/body/div[6]/div[3]/div/div/div/div[2]/div[2]/a"));
 		click_ContinueReg.click();
