@@ -1,4 +1,5 @@
 package ListenerPackage;
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -23,13 +24,11 @@ public class AllureListener implements ITestListener
 		System.out.println("I am in onTestFailure method " + getTestMethodName(iTestResult) + " failed");
 		Object testClass = iTestResult.getInstance();
 		WebDriver driver = BaseClass_Browser.getDriver();
-		// Allure ScreenShot and SaveTestLog
-		if (driver instanceof WebDriver) 
-		{
-			System.out.println("Screenshot captured for test case:" + getTestMethodName(iTestResult));
-			TakeScreenshot(driver);
-		}
-		saveTextLog(getTestMethodName(iTestResult) + " failed and screenshot taken!");	
+		// Allure ScreenShot
+		 BaseClass_Browser takeSS=new BaseClass_Browser();
+		 webdriver=takeSS.Setup_Browser();
+		
+		Allure.addAttachment("FailedTestCase_screenshot", new ByteArrayInputStream(((TakesScreenshot) webdriver).getScreenshotAs(OutputType.BYTES)));
 	}
 	
 	@Attachment(value="Screenshot", type="image/png")

@@ -13,17 +13,10 @@
 		<parameter name="Environment" value="Staging Server" />
 		<parameter name="browser" value="Chrome" />
 		<classes>
-			<class name="Testcases_Package.ValidateLoginPage"></class>
+			<class name="Testcases_Package.TestCase_RegisterUser"></class>
 		</classes>
 	</test>
 
-	<test name="FirefoxTest">
-		<parameter name="Environment" value="Staging Server" />
-		<parameter name="browser" value="Firefox" />
-		<classes>
-			<class name="Testcases_Package.TestCase_InventoryPage"></class>
-		</classes>
-	</test>
 
 	<test name="EdgeTest">
 		<parameter name="Environment" value="Demo Server" />

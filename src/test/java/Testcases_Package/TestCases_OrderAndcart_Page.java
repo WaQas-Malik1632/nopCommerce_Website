@@ -1,7 +1,5 @@
 package Testcases_Package;
-
 import org.testng.annotations.Test;
-
 import Pages_Package.BaseClass_Browser;
 import Pages_Package.LoginPage;
 import Pages_Package.OrderAndCart_Page;
@@ -14,10 +12,14 @@ public class TestCases_OrderAndcart_Page extends BaseClass_Browser
 {
 	WebDriver driver;
   @Test
-  public void VerifyplaceOrderofComputer()
+  public void VerifyplaceOrderofComputer() throws InterruptedException
   {
 	  OrderAndCart_Page order=new OrderAndCart_Page(driver);
-	  order.orderPage();
+	 // order.PlaceOrderofDesktop();
+	//  order.PlaceOrderofAppleNotebook();
+	  order.PlaceOrderofNokiaPhone();
+	  
+	  order.viewCart();
   }
   @BeforeMethod
   public void beforeMethod()

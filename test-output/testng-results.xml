@@ -2,21 +2,48 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-22T13:17:19 PKT" name="Default suite" finished-at="2022-09-22T13:17:27 PKT" duration-ms="8471">
+  <suite started-at="2022-11-15T13:36:46 PKT" name="Default suite" finished-at="2022-11-15T13:37:07 PKT" duration-ms="21125">
     <groups>
     </groups>
-    <test started-at="2022-09-22T13:17:19 PKT" name="Default test" finished-at="2022-09-22T13:17:27 PKT" duration-ms="8471">
-      <class name="Testcases_Package.TestCases_OrderAndcart_Page">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Testcases_Package.TestCases_OrderAndcart_Page@35229f85]" started-at="2022-09-22T13:17:19 PKT" name="beforeMethod" finished-at="2022-09-22T13:17:27 PKT" duration-ms="8229" status="PASS">
+    <test started-at="2022-11-15T13:36:46 PKT" name="Default test" finished-at="2022-11-15T13:37:07 PKT" duration-ms="21125">
+      <class name="Testcases_Package.Testcases_ProductReviews">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Testcases_Package.Testcases_ProductReviews@35229f85]" started-at="2022-11-15T13:36:46 PKT" name="beforeMethod" finished-at="2022-11-15T13:36:57 PKT" duration-ms="10387" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="VerifyplaceOrderofComputer()[pri:0, instance:Testcases_Package.TestCases_OrderAndcart_Page@35229f85]" started-at="2022-09-22T13:17:27 PKT" name="VerifyplaceOrderofComputer" finished-at="2022-09-22T13:17:27 PKT" duration-ms="60" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="DeskReview()[pri:0, instance:Testcases_Package.Testcases_ProductReviews@35229f85]" started-at="2022-11-15T13:36:57 PKT" name="DeskReview" finished-at="2022-11-15T13:37:07 PKT" duration-ms="10556" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NX00483', ip: '10.44.0.45', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\WAQAS~1.NAS\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:64706}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e2e7b08eb11f72b6bd782c128c0f3912]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at Pages_Package.OrderAndCart_Page.orderPage(OrderAndCart_Page.java:22)
-at Testcases_Package.TestCases_OrderAndcart_Page.VerifyplaceOrderofComputer(TestCases_OrderAndcart_Page.java:20)
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NX00483', ip: '10.44.0.45', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\WAQAS~1.NAS\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:64706}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e2e7b08eb11f72b6bd782c128c0f3912
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+at Pages_Package.AddReviews.AddReviewsOfDesktop(AddReviews.java:42)
+at Testcases_Package.Testcases_ProductReviews.DeskReview(Testcases_ProductReviews.java:19)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -47,15 +74,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyplaceOrderofComputer -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Testcases_Package.TestCases_OrderAndcart_Page@35229f85]" started-at="2022-09-22T13:17:27 PKT" name="afterMethod" finished-at="2022-09-22T13:17:27 PKT" duration-ms="1" status="PASS">
+        </test-method> <!-- DeskReview -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Testcases_Package.Testcases_ProductReviews@35229f85]" started-at="2022-11-15T13:37:07 PKT" name="afterMethod" finished-at="2022-11-15T13:37:07 PKT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- Testcases_Package.TestCases_OrderAndcart_Page -->
+      </class> <!-- Testcases_Package.Testcases_ProductReviews -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
