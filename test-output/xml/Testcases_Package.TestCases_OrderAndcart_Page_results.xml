@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="OrderTest"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="24.562">
+  <properties />
+  
+  
+            <testcase name="VerifyplaceOrderofComputer" time="24.562" classname="Testcases_Package.TestCases_OrderAndcart_Page" />
+      
+</testsuite>

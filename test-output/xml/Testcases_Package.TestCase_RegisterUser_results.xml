@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ChromeTest"
+           tests="1"
+           failures="1"
+           errors="0"
+           skipped="0"
+           time="3.697">
+  <properties />
+            <testcase name="Testcases_ToRegisterUserSuccessfully" time="3.697" classname="Testcases_Package.TestCase_RegisterUser">
+                <failure type="java.lang.AssertionError"
+                  message="expected [https://demo.nopcommerce.com/registerresu] but found [https://demo.nopcommerce.com/]"
+              >
+<![CDATA[java.lang.AssertionError: expected [https://demo.nopcommerce.com/registerresu] but found [https://demo.nopcommerce.com/]
+  org.testng.Assert.fail(Assert.java:99)
+  org.testng.Assert.failNotEquals(Assert.java:1037)
+  org.testng.Assert.assertEqualsImpl(Assert.java:140)
+  org.testng.Assert.assertEquals(Assert.java:122)
+  org.testng.Assert.assertEquals(Assert.java:629)
+  org.testng.Assert.assertEquals(Assert.java:639)
+  Testcases_Package.TestCase_RegisterUser.Testcases_ToRegisterUserSuccessfully(TestCase_RegisterUser.java:24)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.base/java.lang.reflect.Method.invoke(Method.java:566)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+  java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+      </failure>
+
+          </testcase>
+  
+  
+  
+</testsuite>
